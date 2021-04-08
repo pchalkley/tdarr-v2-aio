@@ -27,6 +27,6 @@ RUN \
  unzip Tdarr_Updater.zip && \
  ./Tdarr_Updater
 
-EXPOSE 8265 8266
+EXPOSE 8265 8266 8267
 VOLUME ["/opt/tdarr/configs", "/opt/tdarr/logs", "/opt/tdarr/server"]
 ENTRYPOINT ["/opt/tdarr/start-tdarr.sh"]
