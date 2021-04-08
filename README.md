@@ -11,3 +11,11 @@ wget
 unzip
 handbrake-cli
 ffmpeg
+
+## Build Command
+docker build -t chalkley/tdarr:latest --build-arg BUILD_DATE=08-04-2021 --build-arg VERSION=1.0 github.com/pchalkley/tdarr-v2-aio
+
+## Run Command
+docker run -d --name tdarr --cpus="4" -v /media/video:/media/video -v /home/<username>/docker/tdarr/logs:/opt/tdarr/logs  -v /home/<username>/docker/tdarr/configs:/opt/tdarr/configs -v  /home/<username>/docker/tdarr/server:/opt/tdarr/server -p 8265:8265 chalkley/tdarr:latest
+  
+  
