@@ -1,6 +1,6 @@
-#!binbash
+#!/bin/bash
 
 cd /opt/tdarr
 Tdarr_Updater
-Tdarr_NodeTdarr_Node &
-Tdarr_ServerTdarr_Server
+Tdarr_Node/Tdarr_Node &
+Tdarr_Server/Tdarr_Server
