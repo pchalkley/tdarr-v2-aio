@@ -12,6 +12,8 @@ unzip
 handbrake-cli
 ffmpeg
 
+Plus TDarr Server and Node
+
 ## Build Command
 docker build -t chalkley/tdarr:latest --build-arg BUILD_DATE=08-04-2021 --build-arg VERSION=1.0 github.com/pchalkley/tdarr-v2-aio
 
