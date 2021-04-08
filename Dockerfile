@@ -25,7 +25,7 @@ RUN \
  cd /opt/tdarr  && \
  wget https://f000.backblazeb2.com/file/tdarrs/versions/2.00.08/linux_x64/Tdarr_Updater.zip && \
  unzip Tdarr_Updater.zip && \
- Tdarr_Updater
+ ./Tdarr_Updater
 
 EXPOSE 8265 8266
 VOLUME ["/opt/tdarr/config", "/opt/tdarr/logs", "/opt/tdarr/server"]
