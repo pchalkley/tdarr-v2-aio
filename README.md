@@ -1,5 +1,5 @@
 # tdarr-v2-aio
-Tdarr Server and Node run from one container
+Tdarr Server and Node run from one container (All-in-One)
 
 After having various issues running Tdarr using the offical docker containers (server and node), I decided to build my own.  Th issues I had were mainly performance related.  The Server would consume too much CPU and would stop the WebUI from working. Limiting the CPU had no effect as the container would still max out and become unresponsive.
 
