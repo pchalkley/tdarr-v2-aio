@@ -15,7 +15,13 @@ RUN \
  apt-get update && \
  apt-get -y install handbrake-cli && \
  echo "**** install ffmpeg package ****" && \
- apt-get -y install ffmpeg
+ apt-get -y install ffmpeg && \
+ echo "**** install tdarr package ****" && \
+ mkdir /opt/tdarr && \
+ cd /opt/tdarr  && \
+ wget https://f000.backblazeb2.com/file/tdarrs/versions/2.00.08/linux_x64/Tdarr_Updater.zip && \
+ unzip Tdarr_Updater.zip && \
+ Tdarr_Updater
 
 # add local files
 COPY /root /
@@ -27,4 +33,4 @@ VOLUME /opt/tdarr/config
 VOLUME /opt/tdarr/logs
 VOLUME /opt/tdarr/server
 
-CMD ["/opt/tdarr/start-tdarr.sh", "-g", "daemon off;"]
+CMD ["/opt/tdarr/start-tdarr.sh"]
