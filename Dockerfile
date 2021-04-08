@@ -28,5 +28,5 @@ RUN \
  ./Tdarr_Updater
 
 EXPOSE 8265 8266
-VOLUME ["/opt/tdarr/config", "/opt/tdarr/logs", "/opt/tdarr/server"]
+VOLUME ["/opt/tdarr/configs", "/opt/tdarr/logs", "/opt/tdarr/server"]
 ENTRYPOINT ["/opt/tdarr/start-tdarr.sh"]
