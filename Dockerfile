@@ -1,5 +1,5 @@
 FROM ubuntu:20.04
-#
+
 # set version label
 ARG BUILD_DATE
 ARG VERSION
